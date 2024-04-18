@@ -1,0 +1,196 @@
+/* css file style by jeandoe */
+
+:root{
+    --main-color: #024556;
+    --light-green: #efd;
+    --light-bg: #edf;
+    --white: #fff;
+    --black: #131415;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1rem;
+    text-decoration: none;
+    --bdr: 1px solid #233;
+    font-weight: normal;
+}
+
+html{
+    /* font-size: 95%; */
+}
+
+body{
+    font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.header{
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.header .logo{
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.header .logo span{
+    color: var(--main-color);
+    font-size: .8rem;
+}
+
+.header .menu{
+    font-size: 1.3rem;
+    color: var(--main-color);
+    cursor: pointer;
+    padding: .2rem .3rem;
+    border-radius: .25rem;
+    background-color: var(--light-bg);
+}
+
+.header .menu:hover{
+    color: var(--black);
+}
+
+section{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    /* border: var(--bdr); */
+}
+
+section .heading{
+    font-weight: normal;
+}
+
+section .heading span{
+    color: var(--main-color);
+}
+
+section .heading span:hover{
+    text-decoration: underline;
+}
+
+section .form{
+    width: 25rem;
+    background-color: var(--light-bg);
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+.form .input-box{
+    margin: 0.5rem 0;
+}
+
+.form .input-box p{
+    margin: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .input-box p span{
+    font-size: .8rem;
+    color: var(--light-clr);
+}
+
+.form .input-box p i{
+    color: var(--main-color);
+    font-size: 0.8rem;
+}
+
+.form .input-box .box{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: .25rem;
+    background-color: var(--white);
+}
+
+.form .input-box input{
+    font-size: 0.8rem;
+}
+
+.form .input-box input:focus{
+    background-color: var(--light-green);
+}
+
+.form .sub-link{
+    padding: .5rem;
+    margin-top: 2rem;
+    background-color: var(--light-green);
+}
+
+.form .sub-link p{
+    font-size: .8rem;
+    text-align: center;
+    color: var(--light-clr);
+}
+
+.form .sub-link p a{
+    color: var(--main-color);
+    font-size: 0.8rem;
+}
+
+
+.form .sub-link p a:hover{
+    text-decoration: underline;
+}
+
+.form .input-box .btn{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: .25rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+
+.form .input-box .btn:hover{
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: .8rem;
+    width: 15rem;
+    padding: 1rem;
+    background-color: var(--light-bg);
+    border-radius: .25rem;
+}
+
+.icons div{
+    color: var(--main-color);
+    font-size: 1.3rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    cursor: pointer;
+}
+
+.icons div:hover{
+    color: var(--black);
+}
+
+@media(max-width:425px){
+    section .form{
+        width: 100%;
+    }
+
+    .icons{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
